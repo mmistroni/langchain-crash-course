@@ -1,5 +1,5 @@
 {
-    "postCreateCommand": "poetry install",
+    "postCreateCommand": "pip install poetry && poetry install",
     "customizations": {
         "vscode": {
             "settings": {
