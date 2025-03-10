@@ -1,4 +1,10 @@
 {
-    "postCreateCommand": "source /home/codespace/.cache/pypoetry/virtualenvs/langchain-crash-course-hsdY-G0h-py3.12/bin/activate"
-    
+    "postCreateCommand": "poetry install",
+    "customizations": {
+        "vscode": {
+            "settings": {
+                "python.pythonPath": "/home/codespace/.cache/pypoetry/virtualenvs/langchain-crash-course-hsdY-G0h-py3.12/bin/python"
+            }
+        }
+    }
 }
