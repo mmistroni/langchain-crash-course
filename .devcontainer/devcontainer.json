@@ -1,7 +1,6 @@
 {
     "image": "mcr.microsoft.com/devcontainers/universal:2",
-    "postCreateCommand": "pipx install poetry && poetry install",
-    "postStartCommand": "poetry shell",
+    "postCreateCommand": "pipx install poetry && poetry install --no-root",
     "customizations": {
         "vscode": {
             "settings": {
