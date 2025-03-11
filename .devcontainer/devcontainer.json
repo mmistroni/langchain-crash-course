@@ -1,10 +1,15 @@
 {
-    "postCreateCommand": "pip install poetry && poetry install",
+    "image": "mcr.microsoft.com/devcontainers/universal:2",
+    "postCreateCommand": "pipx install poetry && poetry install",
+    "postStartCommand": "poetry shell",
     "customizations": {
         "vscode": {
             "settings": {
-                "python.pythonPath": "/home/codespace/.cache/pypoetry/virtualenvs/langchain-crash-course-hsdY-G0h-py3.12/bin/python"
-            }
+                "python.defaultInterpreterPath": "/home/codespace/.cache/pypoetry/virtualenvs/langchain-crash-course-hsdY-G0h-py3.12/bin/python" // Replace with the actual path
+            },
+            "extensions": [
+                "ms-python.python"
+            ]
         }
     }
 }
